@@ -1,0 +1,144 @@
+student@kali:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos  workspace
+student@kali:~$ mkdir dev
+student@kali:~$ ls
+Desktop  dev  Documents  Downloads  Music  Pictures  Public  Templates  Videos  workspace
+student@kali:~$ cd dev
+student@kali:~/dev$ ls
+student@kali:~/dev$ git --version
+git version 2.9.3
+student@kali:~/dev$ git clone https://github.com/kuba2312/systemyOperacyjne.git
+Cloning into 'systemyOperacyjne'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+student@kali:~/dev$ ls
+systemyOperacyjne
+student@kali:~/dev$ cd systemyOperacyjne/
+student@kali:~/dev/systemyOperacyjne$ ls
+LICENSE
+student@kali:~/dev/systemyOperacyjne$ atom /
+student@kali:~/dev/systemyOperacyjne$ atom .
+student@kali:~/dev/systemyOperacyjne$ git clone https://github.com/kuba2312/systemyOperacyjne.git
+Cloning into 'systemyOperacyjne'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+Checking connectivity... done.
+student@kali:~/dev/systemyOperacyjne$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	systemyOperacyjne/
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@kali:~/dev/systemyOperacyjne$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	systemyOperacyjne/
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@kali:~/dev/systemyOperacyjne$ ls
+LICENSE  systemyOperacyjne
+student@kali:~/dev/systemyOperacyjne$ cd systemyOperacyjne/
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ LS
+
+
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ 
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git add .
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git comit - m "zmiana w pliku README"
+git: 'comit' is not a git command. See 'git --help'.
+
+Did you mean this?
+	commit
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git commit - m "zmiana w pliku README"
+error: pathspec '-' did not match any file(s) known to git.
+error: pathspec 'm' did not match any file(s) known to git.
+error: pathspec 'zmiana w pliku README' did not match any file(s) known to git.
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git commit -m "zmiana w pliku README"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git config --global user.email "you@example.com"student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$   git config --global user.name "Your Name"
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git config --global user.email "you@example.com"student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git config --global user.email "abc"student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git config --global user.name "Your Name"
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git config --global user.name "Kuba"
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git comit -m "zmiana w pliku README"
+git: 'comit' is not a git command. See 'git --help'.
+
+Did you mean this?
+	commit
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git commit -m "zmiana w pliku README"
+[master 4e00422] zmiana w pliku README
+ 1 file changed, 2 insertions(+)
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git push
+Username for 'https://github.com': kuba2312
+Password for 'https://kuba2312@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 319 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kuba2312/systemyOperacyjne.git
+   7486206..4e00422  master -> master
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git pull
+Already up-to-date.
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/kuba2312/systemyOperacyjne
+   4e00422..15fff45  master     -> origin/master
+Updating 4e00422..15fff45
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+student@kali:~/dev/systemyOperacyjne/systemyOperacyjne$ 
